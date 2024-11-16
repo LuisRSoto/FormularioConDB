@@ -1,0 +1,162 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #0b253a;
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #1e90ff;
+}
+
+/* Encabezados */
+h1 {
+  margin-top: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Formularios */
+form {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px 30px;
+  margin: 20px auto;
+  background: #0b253a;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #b0c4de;
+  font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #162b46;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ffffff;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  box-shadow: 0 0 8px #1e90ff;
+}
+
+/* Botón */
+form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  transform: scale(1.02);
+}
+
+/* Tabla */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #0b253a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #162b46;
+  color: #ffffff;
+}
+
+table th {
+  background-color: #1e90ff;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #162b46;
+}
+
+table tr:hover {
+  background-color: #1e3c72;
+}
+
+/* Botones de acción en la tabla */
+.btn-editar,
+.btn-eliminar {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  margin-right: 5px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.btn-editar {
+  background-color: #ffc107;
+}
+
+.btn-editar:hover {
+  opacity: 0.8;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+}
+
+.btn-eliminar:hover {
+  opacity: 0.8;
+}
